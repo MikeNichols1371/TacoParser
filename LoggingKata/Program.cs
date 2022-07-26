@@ -62,9 +62,11 @@ namespace LoggingKata
                         distance = Math.Round(corA.GetDistanceTo(corB), 2);
                         tacoBell1 = locA;
                         tacoBell2 = locB;
+                        
                     }
                 }
             }
+                var distanceMiles = Math.Round(distance * 0.000621, 2);
             // Create a new corA Coordinate with your locA's lat and long
 
 
@@ -76,7 +78,7 @@ namespace LoggingKata
             // If the distance is greater than the currently saved distance, update the distance and the two `ITrackable` variables you set above
 
             // Once you've looped through everything, you've found the two Taco Bells farthest away from each other.
-            Console.Write($"The Distance between {tacoBell1.Name} and {tacoBell2.Name} is {distance} miles");
+            Console.Write($"The Distance between {tacoBell1.Name} and {tacoBell2.Name} is {distanceMiles} miles");
 
             
         }
